@@ -1,0 +1,2 @@
+food:
+	latexmk -pdf
