@@ -2,6 +2,7 @@
 \documentclass{article}
 
 \usepackage[parfill]{parskip}
+\usepackage{xparse}
 
 \title{Food}
 \author{}
@@ -9,7 +10,12 @@
 
 \newcommand\ing[1]{{\bf#1}}
 
+\renewcommand{\labelitemi}{}
+
 \setcounter{secnumdepth}{0}
+
+\usepackage{sectsty}
+\sectionfont{\sectionrule{0pt}{0pt}{-5pt}{0.8pt}}
 
 \begin{document}
 
@@ -17,9 +23,11 @@
 
 \tableofcontents
 
+\input{pages/curry}
 \input{pages/pancakes}
 \input{pages/shrimp-and-grits}
 \input{pages/stroganoff}
+\input{pages/tomato-sauce}
 
 \end{document}
 
